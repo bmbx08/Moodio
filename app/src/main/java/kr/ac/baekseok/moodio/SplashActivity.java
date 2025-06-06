@@ -17,13 +17,13 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // 5초 후 로그인 화면으로 이동
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish(); // 스플래시 액티비티 종료
-            }
-        }, SPLASH_DELAY);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+//                startActivity(intent);
+//                finish(); // 스플래시 액티비티 종료
+//            }
+//        }, SPLASH_DELAY);
     }
 }
