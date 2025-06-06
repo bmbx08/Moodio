@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#0E0B1F">
+
+    <!-- 뒤로가기 아이콘 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<!--        <ImageView-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/common_back_button"-->
+<!--            android:contentDescription="Back"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:layout_marginBottom="24dp" />-->
+
+        <!-- 제목 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="계정 생성"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+    </LinearLayout>
+
+
+    <!-- 이름 입력 -->
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="이름"
+        android:background="@drawable/input_background"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 아이디 입력 -->
+    <EditText
+        android:id="@+id/regId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="아이디"
+        android:background="@drawable/input_background"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 비밀번호 입력 -->
+    <EditText
+        android:id="@+id/regPassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="비밀번호"
+        android:background="@drawable/input_background"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 가입하기 버튼 -->
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="가입하기"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6C40FF"
+        android:background="@drawable/rounded_button"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 로그인 안내 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이미 계정이 있으신가요? 로그인"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+</LinearLayout>
