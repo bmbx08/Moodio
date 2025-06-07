@@ -75,12 +75,15 @@
         android:layout_marginBottom="24dp" />
 
     <!-- 로그인 안내 -->
-    <TextView
+    <Button
+        android:id="@+id/btnGoToLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="이미 계정이 있으신가요? 로그인"
         android:textColor="#AAAAAA"
         android:textSize="14sp"
-        android:gravity="center" />
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:padding="0dp" />
 
 </LinearLayout>
