@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--앱에 인터넷 사용권한 설정-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
+        android:name=".MoodieApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -32,6 +36,22 @@
         </activity>
         <activity
             android:name=".HomeActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DiaryListActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".NewDiaryActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ComfortCardsActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".FindCenterActivity"
             android:exported="true">
         </activity>
     </application>

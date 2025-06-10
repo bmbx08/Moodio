@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/dark_background">
+    android:background="@color/dark_background"
+    tools:context=".SplashActivity">
 
-    <!-- 이미지 -->
-    <ImageView
-        android:id="@+id/splash_image"
+    <androidx.cardview.widget.CardView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/splash_icon"
-        android:contentDescription="App logo" />
+        app:cardCornerRadius="100dp"
+        app:cardElevation="4dp">
+        <!-- 이미지 -->
+        <ImageView
+            android:id="@+id/splash_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/splash_icon"
+            android:contentDescription="App logo" />
+    </androidx.cardview.widget.CardView>
+
+
 
     <!-- 'Moodie' 텍스트 -->
     <TextView

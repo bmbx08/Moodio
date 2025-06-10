@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#0A0716"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".HomeActivity">
 
     <!-- 상단 앱 이름과 설정 아이콘을 위한 가로 레이아웃 -->
     <LinearLayout
@@ -45,10 +48,10 @@
         >
         <!-- 인사말 -->
         <TextView
-            android:id="@+id/greeting"
+            android:id="@+id/homeGreeting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="반가워요, 정기찬님!"
+            android:text="반가워요!"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -59,8 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginBottom="16dp">
+            android:gravity="center">
 
             <Button
                 android:id="@+id/btnEmotionDiary"
@@ -75,8 +77,9 @@
                 android:background="@drawable/home_rounded_button"
                 />
 
+
             <Button
-                android:id="@+id/btnTodoList1"
+                android:id="@+id/btnComfortCards"
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
@@ -96,26 +99,25 @@
             android:layout_marginBottom="32dp">
 
             <Button
-                android:id="@+id/btnTodoList2"
-                android:layout_width="0dp"
+                android:id="@+id/btnFindCenter"
+                android:layout_width="180dp"
                 android:layout_height="160dp"
-                android:layout_weight="1"
                 android:layout_margin="8dp"
-                android:text="할 일 목록"
+                android:text="심리상담소 찾기"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:background="@drawable/home_rounded_button"/>
 
-            <Button
-                android:id="@+id/btnTest"
-                android:layout_width="0dp"
-                android:layout_height="160dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                android:text="불안/스트레스 테스트"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:background="@drawable/home_rounded_button"/>
+<!--            <Button-->
+<!--                android:id="@+id/btnTest"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="160dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:text="불안/스트레스 테스트"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="14sp"-->
+<!--                android:background="@drawable/home_rounded_button"/>-->
         </LinearLayout>
     </LinearLayout>
 
@@ -124,10 +126,9 @@
         android:id="@+id/quote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="&quot;If you think your mind is everything, you become that.&quot; - Buddhism"
+        android:text="&quot;원하는 카드를 즐겨찾기해주세요.&quot;"
         android:textColor="#AAAAAA"
         android:textSize="12sp"
         android:gravity="center"
-        android:layout_gravity="center_horizontal|bottom"
         android:layout_marginBottom="20dp"/>
 </LinearLayout>

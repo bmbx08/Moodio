@@ -14,7 +14,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
-
     EditText edtLoginId, edtLoginPw;
     Button btnLogin, btnGoToSignup;
     SQLiteDatabase sqlDB;
@@ -24,6 +23,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        MoodieApp app = (MoodieApp) getApplication();
 
         edtLoginId = (EditText) findViewById(R.id.loginId);
         edtLoginPw = (EditText) findViewById(R.id.loginPassword);
@@ -50,6 +51,8 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "정상회원입니다.", Toast.LENGTH_LONG).show();
                         // 로그인 성공 후 이동할 화면 설정 (지금은 임시로 MainActivity 자신으로 설정됨)
                         Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+//                        intent.putExtra("userId",inputId);
+                        app.setUserId(inputId);
                         startActivity(intent);
                     } else {
                         Toast.makeText(getApplicationContext(), "비밀번호가 틀립니다.", Toast.LENGTH_LONG).show();

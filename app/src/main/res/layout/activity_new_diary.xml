@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".NewDiaryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="새로운 기록"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/text_date"
+        android:text="2025-06-10"
+        android:textColor="#B8B8D1"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:text="오늘 기분이 어떠셨어요?"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:paddingBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/emotion_group"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_happy"
+            android:text="😊행복"
+            android:tag="happy"
+            android:textColor="#fff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/diary_emotion_button"
+            android:buttonTint="#B8B8D1"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="14dp"/>
+        <RadioButton
+            android:id="@+id/rb_sad"
+            android:text="😢슬픔"
+            android:tag="sad"
+            android:textColor="#fff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/diary_emotion_button"
+            android:buttonTint="#B8B8D1"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="14dp"/>
+        <RadioButton
+            android:id="@+id/rb_angry"
+            android:text="😠화남"
+            android:tag="angry"
+            android:textColor="#fff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/diary_emotion_button"
+            android:buttonTint="#B8B8D1"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="14dp"/>
+        <RadioButton
+            android:id="@+id/rb_anxious"
+            android:text="😰불안"
+            android:tag="anxious"
+            android:textColor="#fff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/diary_emotion_button"
+            android:buttonTint="#B8B8D1"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="14dp"/>
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb_neutral"-->
+<!--            android:text="😐 중립"-->
+<!--            android:tag="neutral"-->
+<!--            android:textColor="#fff"-->
+<!--            android:button="@android:color/transparent"-->
+<!--            android:background="@drawable/diary_emotion_button"-->
+<!--            android:buttonTint="#B8B8D1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingHorizontal="14dp"-->
+<!--            android:paddingVertical="10dp"/>-->
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:hint="일기 제목"
+        android:textColor="#fff"
+        android:textColorHint="#B8B8D1"
+        android:background="#2D3250"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"/>
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:hint="일기 내용"
+        android:textColor="#fff"
+        android:textColorHint="#B8B8D1"
+        android:background="#2D3250"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:text="저장"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#B8B8D1"
+        android:textColor="#18122B"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+</LinearLayout>
